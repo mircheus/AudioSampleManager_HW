@@ -84,7 +84,7 @@ public class AudioManagerEditor : Editor
 
     private void DrawPlayButton(Sample sample)
     {
-        if (GUILayout.Button("Play", GUILayout.Width(40), GUILayout.Height(40)))
+        if (GUILayout.Button("Play", GUILayout.Width(120), GUILayout.Height(20)))
         {
             Debug.Log($"{sample.Name.ToString()} played");
             PlaySample(sample);
@@ -112,7 +112,7 @@ public class AudioManagerEditor : Editor
 
     private void DrawRemoveSampleButton(Sample sample)
     {
-        if (GUILayout.Button("Delete", GUILayout.Width(20), GUILayout.Height(20)))
+        if (GUILayout.Button("Delete", GUILayout.Width(50), GUILayout.Height(20)))
         {
             RemoveSample(sample);
         }
