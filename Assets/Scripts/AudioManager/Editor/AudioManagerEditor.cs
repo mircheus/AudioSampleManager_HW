@@ -99,7 +99,6 @@ public class AudioManagerEditor : Editor
         audioSource.pitch = sampleToPlay.Pitch;
         audioSource.volume = sampleToPlay.Volume;
         audioSource.Play();
-        Debug.Log("End of play sample method");
     }
 
     private void DrawAddSampleButton()
